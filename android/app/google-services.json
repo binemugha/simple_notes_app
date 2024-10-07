@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "887069733791",
+    "project_id": "simple-notes-app-binemugha",
+    "storage_bucket": "simple-notes-app-binemugha.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:887069733791:android:d9b920dd0be0d26c90c3aa",
+        "android_client_info": {
+          "package_name": "com.example.simple_notes_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJKjPMXAnK5c_G0D-9DVU4bHB5CpFXeJ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
