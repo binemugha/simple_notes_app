@@ -50,7 +50,7 @@ class _HomePageState extends State<HomePage> {
       body: StreamBuilder<QuerySnapshot>(
         stream: firestoreService.getNotesStream(),
         builder: (context, snapshot) {
-          if (snapshot.hasData) {
+          if (snapshot.data!.docs.isNotEmpty) {
             List notesList = snapshot.data!.docs;
 
             return ListView.builder(
@@ -84,7 +84,13 @@ class _HomePageState extends State<HomePage> {
                   );
                 });
           } else {
-            return const Text('No notes...');
+            return const Padding(
+              padding: EdgeInsets.all(8.0),
+              child: Text(
+                'No notes...',
+                style: TextStyle(fontSize: 16),
+              ),
+            );
           }
         },
       ),
